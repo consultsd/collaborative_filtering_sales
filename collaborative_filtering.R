@@ -7,10 +7,10 @@ setwd ("C:/Users/Sharath P Dandamudi/Desktop")
 #Note the folowing:
 #The csv file should have only 2 columns
 #The first column in the csv should be 'Sold_to_group' (no space in between) and the second column should be 'Material'
-#The values in the Sold_to_group column should not have special characters : eg. CORPORACIÓN VENEZOLA should be replaced as CORPORACION VENEZOLA
+#The values in the Sold_to_group column should not have special characters : eg. CORPORACIÃ“N VENEZOLA should be replaced as CORPORACION VENEZOLA
 #Otherwise error will be thrown up while running the code
 
-df = read_csv("fonterra.csv")
+df = read_csv("xyz.csv")
 
 #Transforming the data frame to a frequency matrix
 matrix = data.frame ( table ( df$Sold_to_group, df$Material) [,] ) 
